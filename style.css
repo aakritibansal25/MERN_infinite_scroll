@@ -5,16 +5,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f0f2f5; 
+    background-color: #cbc6f8; 
 }
 
-#post-container {
+#container {
     width: 90%;
     max-width: 800px;
     margin-top: 20px;
 }
 
-#loader {
+#post_loader {
     border: 8px solid #f3f3f3;
     border-top: 8px solid #3498db; 
     border-radius: 50%;
@@ -27,6 +27,34 @@ body {
 .hidden {
     display: none;
 }
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post h1 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .post h3 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .post p {
+    font-size: 16px;
+    color: #444;
+  }
+  
+  
+  
 
 @keyframes spin {
     0% { transform: rotate(0deg); }

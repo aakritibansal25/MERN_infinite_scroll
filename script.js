@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const postContainer = document.getElementById('post-container');
-    const loader = document.getElementById('loader');
+    const postContainer = document.getElementById('container');
+    const post_loader = document.getElementById('post_loader');
         
     async function fetchPosts() {
-        loader.classList.remove('hidden');
+        post_loader.classList.remove('hidden');
         try {
-            const response = await fetch(`https://jsonplaceholder.typicode.com/posts`);
+            const response = await fetch("https://jsonplaceholder.typicode.com/posts");
             const posts = await response.json();
 
             if (posts.length > 0) {
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.error('Error fetching posts:', error);
         } finally {
-            loader.classList.add('hidden');
+            post_loader.classList.add('hidden');
         }
     }
 
